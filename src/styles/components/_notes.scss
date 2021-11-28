@@ -1,0 +1,56 @@
+.notes__main-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.notes__appbar {
+    align-items: center;
+    background-color: $primary;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+.notes__content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+.notes__title-input, .notes_textarea{
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+.notes__title-input{
+    color: $dark-grey;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
+}
+.notes_textarea{
+    border: none;
+    color: $dark-grey;
+    font-size: 16px;
+    flex: 1 1 auto;
+    resize: none;
+}
+.notes__image img{
+    border-radius: 3px;
+    box-shadow: 3px 3px lighten($color: $dark-grey, $amount: 25);
+    height: 150px;
+}
+
+.nothing__main-content {
+    height: 100vh;
+    color: $white;
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
